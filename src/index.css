@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* buttons */
+  .button-books {
+    @apply bg-gradient-to-b from-sky-500 to-blue-500 shadow-lg shadow-blue-400 rounded-lg text-lg sm:text-sm px-9 py-1.5 transition-all duration-200 active:scale-90 text-white sm:w-48;
+  }
+  .button-light {
+    @apply bg-gradient-to-b from-white to-slate-100 shadow-lg shadow-slate-200 rounded-full text-lg sm:text-sm px-9 py-1.5 transition-all duration-200 active:scale-90 text-black sm:w-48;
+  }
+}
