@@ -5,7 +5,7 @@ const handleChange = (e) => {};
 function Footer() {
   return (
     <div className=" bg-blue-400 py-15 rounded-lg h-auto">
-      <div className="flex p-8 m-auto justify-between align-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 p-8 m-auto gap-4 justify-between align-center ">
         <div className="">
           <h1 className="">LOGO HERE!</h1>
         </div>
@@ -34,10 +34,11 @@ function Footer() {
           <li>9.00 am close 20:00 </li>
           <li> 2023</li>
         </ul>
-        <figure>
+        <div>
           <h3>Subcribete a own newslatter</h3>
           <form onSubmit={(e) => e.preventDefault()}>
             <input
+              className="w-[120px]"
               id="email"
               type="text"
               placeholder="email"
@@ -45,7 +46,7 @@ function Footer() {
             />
             <button>Enviar</button>
           </form>
-        </figure>
+        </div>
       </div>
       <h6 className="px-6 m-2 border-t border-blue-300 text-center">
         todos los derechos reservados 2023{" "}

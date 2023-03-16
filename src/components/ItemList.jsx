@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function ItemList({ items }) {
   return (
     <div>
-      <div className="grid grid-cols-4 gap-4 h-auto max-w-screen-xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 h-auto max-w-screen-xl">
         {items.map((product) => (
           <div
             key={product.id}
