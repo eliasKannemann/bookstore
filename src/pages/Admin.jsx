@@ -38,7 +38,7 @@ function Admin() {
     }).then((result) => {
       if (result.isConfirmed) {
         deleteProduct(id);
-        MySwal.fire("Deleted!", "Your file has been deleted.", "success");
+        Swal.fire("Deleted!", "Your file has been deleted.", "success");
       }
     });
   };
